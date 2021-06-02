@@ -14,11 +14,11 @@
 
     <center>
         <button class="botao" id="especies"><a href="especies/index.php">Ver todas espécies</a></button>
-        <button class="botao" id="filmes"><a href="/filmes">Ver todos filmes</a></button>
-        <button class="botao" id="naves"><a href="/naves">Ver todas naves</a></button>
-        <button class="botao" id="personagens"><a href="/personagens">Ver todos personagens</a></button>
-        <button class="botao" id="planetas"><a href="/planetas">Ver todos planetas</a></button>
-        <button class="botao" id="veiculos"><a href="/veiculos">Ver todos veiculos</a></button>
+        <button class="botao" id="filmes"><a href="filmes/index.php">Ver todos filmes</a></button>
+        <button class="botao" id="naves"><a href="naves/index.php">Ver todas naves</a></button>
+        <button class="botao" id="personagens"><a href="personagens">Ver todos personagens</a></button>
+        <button class="botao" id="planetas"><a href="planetas">Ver todos planetas</a></button>
+        <button class="botao" id="veiculos"><a href="veiculos">Ver todos veiculos</a></button>
     
     <br>
     <hr>

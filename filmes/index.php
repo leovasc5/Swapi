@@ -8,24 +8,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link href="../css/footer.css" rel="stylesheet">
     <link href="../css/table.css" rel="stylesheet">
-    <title>SWAPI - Espécies</title>
+    <title>SWAPI - Filmes</title>
 </head>
 <body>
     <table id="customers">
         <tr>
-            <th>Espécies</th>
+            <th>Título</th>
+            <th>Diretor</th>
+            <th>Produtor</th>
+            <th>Texto de abertura</th>
         </tr>
 <?php
-    $url = "https://swapi.dev/api/species/";
+    $url = "https://swapi.dev/api/films/";
     $resultado = json_decode(file_get_contents($url));
 
-    foreach($resultado->results as $especie){
+    foreach($resultado->results as $filme){
         echo "
         <tr>
             <td>
-                $especie->name
+                $filme->title
             </td>
-        </tr>
+
+            <td>
+                $filme->director
+            </td>
+        
+            <td>
+                $filme->producer
+            </td>
+
+            <td>
+                $filme->opening_crawl
+            </td>
         ";
     }
 ?>
@@ -33,7 +47,7 @@
 <br>
 <a href="../index.php">Voltar à página inicial</a>
 
-<div class="footer-basic" style="margin-top: 172px">
+<div class="footer-basic" style="margin-top: 24px">
     <footer>
         <div class="social">
             <a href="https://github.com/leovasc5/"><i class="icon ion-social-github"></i></a>
