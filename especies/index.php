@@ -14,6 +14,9 @@
     <table id="customers">
         <tr>
             <th>Espécies</th>
+            <th>Classificação</th>
+            <th>Tempo de vida</th>
+            <th>Idioma</th>
         </tr>
 <?php
     $url = "https://swapi.dev/api/species/";
@@ -24,6 +27,93 @@
         <tr>
             <td>
                 $especie->name
+            </td>
+
+            <td>
+                $especie->classification
+            </td>
+
+            <td>
+                $especie->average_lifespan
+            </td>
+
+            <td>
+                $especie->language
+            </td>
+        </tr>
+        ";
+    }
+
+    $url = "https://swapi.dev/api/species/?page=2";
+    $resultado = json_decode(file_get_contents($url));
+
+    foreach($resultado->results as $especie){
+        echo "
+        <tr>
+            <td>
+                $especie->name
+            </td>
+
+            <td>
+                $especie->classification
+            </td>
+
+            <td>
+                $especie->average_lifespan
+            </td>
+
+            <td>
+                $especie->language
+            </td>
+        </tr>
+        ";
+    }
+
+    $url = "https://swapi.dev/api/species/?page=3";
+    $resultado = json_decode(file_get_contents($url));
+
+    foreach($resultado->results as $especie){
+        echo "
+        <tr>
+            <td>
+                $especie->name
+            </td>
+
+            <td>
+                $especie->classification
+            </td>
+
+            <td>
+                $especie->average_lifespan
+            </td>
+
+            <td>
+                $especie->language
+            </td>
+        </tr>
+        ";
+    }
+
+    $url = "https://swapi.dev/api/species/?page=4";
+    $resultado = json_decode(file_get_contents($url));
+
+    foreach($resultado->results as $especie){
+        echo "
+        <tr>
+            <td>
+                $especie->name
+            </td>
+
+            <td>
+                $especie->classification
+            </td>
+
+            <td>
+                $especie->average_lifespan
+            </td>
+
+            <td>
+                $especie->language
             </td>
         </tr>
         ";
