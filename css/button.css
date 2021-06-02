@@ -87,3 +87,12 @@ a{
 #veiculos:hover{
     background-color: #1E90FF;
 }
+
+form{
+    margin-top: 20px;
+}
+
+input[type="text"]{
+    height: 20px;
+    margin: 0 auto;
+}

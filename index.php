@@ -12,25 +12,18 @@
 </head>
 <body>
 
-    <!-- <?php
-        $url = "https://swapi.dev/api/people/?page=9";
-        $resultado = json_decode(file_get_contents($url));
-
-        foreach($resultado->results as $ator){
-            echo "Personagem: ".$ator->name;
-            echo "<br>";
-        }
-    ?> -->
-
     <center>
-        <button class="botao" id="especies"><a href="/especies">Ver todos espécies</a></button>
+        <button class="botao" id="especies"><a href="especies/index.php">Ver todas espécies</a></button>
         <button class="botao" id="filmes"><a href="/filmes">Ver todos filmes</a></button>
         <button class="botao" id="naves"><a href="/naves">Ver todas naves</a></button>
         <button class="botao" id="personagens"><a href="/personagens">Ver todos personagens</a></button>
         <button class="botao" id="planetas"><a href="/planetas">Ver todos planetas</a></button>
         <button class="botao" id="veiculos"><a href="/veiculos">Ver todos veiculos</a></button>
-    </center>
-
+    
+    <br>
+    <hr>
+    <br>
+    
     <form action="/especie/index.php" method="GET">
         <input type="text" placeholder="Pesquisar espécie"/><button class="pesquisar">Procurar</button>
     </form>
@@ -54,8 +47,9 @@
     <form action="/veiculo/index.php" method="GET">
         <input type="text" placeholder="Pesquisar veículo"/><button class="pesquisar">Procurar</button>
     </form>
+    </center>
 
-    <div class="footer-basic">
+    <div class="footer-basic" style="margin-top: 205px">
         <footer>
             <div class="social">
                 <a href="https://github.com/leovasc5/"><i class="icon ion-social-github"></i></a>
