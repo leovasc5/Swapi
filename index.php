@@ -7,12 +7,18 @@
     <title>Swapi</title>
 </head>
 <body>
+
     <?php
-        $url = "https://swapi.dev/api/people/";
+        $url = "https://swapi.dev/api/people/?page=9";
         $resultado = json_decode(file_get_contents($url));
 
-
-        var_dump($resultado);
+        foreach($resultado->results as $ator){
+            echo "Personagem: ".$ator->name;
+            echo "<br>";
+        }
     ?>
+
+    <a href="/personagens">Ver todos personagens</a>
+    <a href="/personagens">Ver todos personagens</a>
 </body>
 </html>
