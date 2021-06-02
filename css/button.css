@@ -1,0 +1,89 @@
+input [type='submit']{
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: hsl(210, 29%, 29%);
+    cursor: pointer;
+}
+
+button{
+    background-color: transparent;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.botao {
+    margin: 0;
+    width: 150px;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px 10px 10px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.pesquisar{
+    border: 1px solid #00006f;
+}
+
+.pesquisar:hover{
+    background-color: #808080;
+    color: white;
+}
+
+#especies{
+    background-color: #6A5ACD;
+}
+
+#especies:hover{
+    background-color: #836FFF;
+}
+
+#filmes{
+    background-color: #6959CD;
+}
+
+#filmes:hover{
+    background-color: #483D8B;
+}
+
+#naves{
+    background-color: #191970;
+}
+
+#naves:hover{
+    background-color: #0000f0;
+}
+
+#personagens{
+    background-color: #00008B;
+    width: 200px;
+}
+
+#personagens:hover{
+    background-color: #0000CD;
+}
+
+#planetas{
+    background-color: #0000FF;
+}
+
+#planetas:hover{
+    background-color: #6495ED;
+}
+
+#veiculos{
+    background-color: #4169E1;
+}
+
+#veiculos:hover{
+    background-color: #1E90FF;
+}
