@@ -8,17 +8,18 @@
     <link href="css/button.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link href="css/footer.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://swapi.dev/static/favicon.ico">
     <title>Swapi</title>
 </head>
 <body>
 
     <center>
-        <button class="botao" id="especies"><a href="especies/index.php">Ver todas espécies</a></button>
-        <button class="botao" id="filmes"><a href="filmes/index.php">Ver todos filmes</a></button>
-        <button class="botao" id="naves"><a href="naves/index.php">Ver todas naves</a></button>
-        <button class="botao" id="personagens"><a href="personagens/index.php">Ver todos personagens</a></button>
-        <button class="botao" id="planetas"><a href="planetas">Ver todos planetas</a></button>
-        <button class="botao" id="veiculos"><a href="veiculos">Ver todos veiculos</a></button>
+        <button class="botao" id="especies"><a href="especies/index.php">Ver todas as espécies</a></button>
+        <button class="botao" id="filmes"><a href="filmes/index.php">Ver todos os filmes</a></button>
+        <button class="botao" id="naves"><a href="naves/index.php">Ver todas as naves</a></button>
+        <button class="botao" id="personagens"><a href="personagens/index.php">Ver todos os personagens</a></button>
+        <button class="botao" id="planetas"><a href="planetas">Ver todos os planetas</a></button>
+        <button class="botao" id="veiculos"><a href="veiculos">Ver todos os veículos</a></button>
     
     <br>
     <hr>

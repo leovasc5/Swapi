@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link href="../css/footer.css" rel="stylesheet">
     <link href="../css/table.css" rel="stylesheet">
+    <link rel="shortcut icon" href="https://swapi.dev/static/favicon.ico">
     <title>SWAPI - Espécies</title>
 </head>
 <body>
@@ -22,6 +23,102 @@
         </tr>
 <?php
     $url = "https://swapi.dev/api/starships/";
+    $resultado = json_decode(file_get_contents($url));
+
+    foreach($resultado->results as $nave){
+        echo "
+        <tr>
+            <td>
+                $nave->name
+            </td>
+
+            <td>
+                $nave->model
+            </td>
+
+            <td>
+                $nave->starship_class
+            </td>
+        
+            <td>
+                $nave->max_atmosphering_speed 
+            </td>
+
+            <td>
+                $nave->cargo_capacity 
+            </td>
+
+            <td>
+                $nave->passengers 
+            </td> 
+        ";
+    }
+
+    $url = "https://swapi.dev/api/starships/?page=2";
+    $resultado = json_decode(file_get_contents($url));
+
+    foreach($resultado->results as $nave){
+        echo "
+        <tr>
+            <td>
+                $nave->name
+            </td>
+
+            <td>
+                $nave->model
+            </td>
+
+            <td>
+                $nave->starship_class
+            </td>
+        
+            <td>
+                $nave->max_atmosphering_speed 
+            </td>
+
+            <td>
+                $nave->cargo_capacity 
+            </td>
+
+            <td>
+                $nave->passengers 
+            </td> 
+        ";
+    }
+
+    $url = "https://swapi.dev/api/starships/?page=3";
+    $resultado = json_decode(file_get_contents($url));
+
+    foreach($resultado->results as $nave){
+        echo "
+        <tr>
+            <td>
+                $nave->name
+            </td>
+
+            <td>
+                $nave->model
+            </td>
+
+            <td>
+                $nave->starship_class
+            </td>
+        
+            <td>
+                $nave->max_atmosphering_speed 
+            </td>
+
+            <td>
+                $nave->cargo_capacity 
+            </td>
+
+            <td>
+                $nave->passengers 
+            </td> 
+        ";
+    }
+
+    $url = "https://swapi.dev/api/starships/?page=4";
     $resultado = json_decode(file_get_contents($url));
 
     foreach($resultado->results as $nave){

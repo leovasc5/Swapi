@@ -41,6 +41,7 @@ a{
 
 #especies{
     background-color: #6A5ACD;
+    width: 160px;
 }
 
 #especies:hover{
@@ -65,7 +66,7 @@ a{
 
 #personagens{
     background-color: #00008B;
-    width: 200px;
+    width: 180px;
 }
 
 #personagens:hover{
