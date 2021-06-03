@@ -14,10 +14,10 @@
 <body>
 
     <center>
-        <button class="botao" id="especies"><a href="especies/index.php">Ver todas as espécies</a></button>
-        <button class="botao" id="filmes"><a href="filmes/index.php">Ver todos os filmes</a></button>
-        <button class="botao" id="naves"><a href="naves/index.php">Ver todas as naves</a></button>
-        <button class="botao" id="personagens"><a href="personagens/index.php">Ver todos os personagens</a></button>
+        <button class="botao" id="especies"><a href="especies">Ver todas as espécies</a></button>
+        <button class="botao" id="filmes"><a href="filmes">Ver todos os filmes</a></button>
+        <button class="botao" id="naves"><a href="naves">Ver todas as naves</a></button>
+        <button class="botao" id="personagens"><a href="personagens">Ver todos os personagens</a></button>
         <button class="botao" id="planetas"><a href="planetas">Ver todos os planetas</a></button>
         <button class="botao" id="veiculos"><a href="veiculos">Ver todos os veículos</a></button>
     
@@ -25,28 +25,28 @@
     <hr>
     <br>
     
-    <form action="/especie/index.php" method="GET">
-        <input type="text" placeholder="Pesquisar espécie"/><button class="pesquisar">Procurar</button>
+    <form action="especie/index.php" method="GET">
+        <input type="text" name="search" placeholder="Pesquisar espécie"/><button class="pesquisar">Procurar</button>
     </form>
 
-    <form action="/filme/index.php" method="GET">
-        <input type="text" placeholder="Pesquisar filme"/><button class="pesquisar">Procurar</button>
+    <form action="filme/index.php" method="GET">
+        <input type="text" name="search" placeholder="Pesquisar filme"/><button class="pesquisar">Procurar</button>
     </form>
 
-    <form action="/nave/index.php" method="GET">
-        <input type="text" placeholder="Pesquisar nave"/><button class="pesquisar">Procurar</button>
+    <form action="nave/index.php" method="GET">
+        <input type="text" name="search" placeholder="Pesquisar nave"/><button class="pesquisar">Procurar</button>
     </form>
 
-    <form action="/personagem/index.php" method="GET">
-        <input type="text" placeholder="Pesquisar personagem"/><button class="pesquisar">Procurar</button>
+    <form action="personagem/index.php" method="GET">
+        <input type="text" name="search" placeholder="Pesquisar personagem"/><button class="pesquisar">Procurar</button>
     </form>
 
-    <form action="/planeta/index.php" method="GET">
-        <input type="text" placeholder="Pesquisar planeta"/><button class="pesquisar">Procurar</button>
+    <form action="planeta/index.php" method="GET">
+        <input type="text" name="search" placeholder="Pesquisar planeta"/><button class="pesquisar">Procurar</button>
     </form>
 
-    <form action="/veiculo/index.php" method="GET">
-        <input type="text" placeholder="Pesquisar veículo"/><button class="pesquisar">Procurar</button>
+    <form action="veiculo/index.php" method="GET">
+        <input type="text" name="search" placeholder="Pesquisar veículo"/><button class="pesquisar">Procurar</button>
     </form>
     </center>
 
