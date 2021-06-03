@@ -36,6 +36,46 @@
         array_push($array_max_atmosphering_speed, $nave->max_atmosphering_speed);
     }
 
+    $url = "https://swapi.dev/api/starships/?page=2";
+    $resultado = json_decode(file_get_contents($url));
+
+    foreach($resultado->results as $nave){
+        array_push($array_name, $nave->name);
+        array_push($array_model, $nave->model);
+        array_push($array_starship_class, $nave->starship_class);
+        array_push($array_manufacturer, $nave->manufacturer);
+        array_push($array_length, $nave->length);
+        array_push($array_passengers, $nave->passengers);
+        array_push($array_max_atmosphering_speed, $nave->max_atmosphering_speed);
+    }
+
+    $url = "https://swapi.dev/api/starships/?page=3";
+    $resultado = json_decode(file_get_contents($url));
+
+    foreach($resultado->results as $nave){
+        array_push($array_name, $nave->name);
+        array_push($array_model, $nave->model);
+        array_push($array_starship_class, $nave->starship_class);
+        array_push($array_manufacturer, $nave->manufacturer);
+        array_push($array_length, $nave->length);
+        array_push($array_passengers, $nave->passengers);
+        array_push($array_max_atmosphering_speed, $nave->max_atmosphering_speed);
+    }
+
+    $url = "https://swapi.dev/api/starships/?page=4";
+    $resultado = json_decode(file_get_contents($url));
+
+    foreach($resultado->results as $nave){
+        array_push($array_name, $nave->name);
+        array_push($array_model, $nave->model);
+        array_push($array_starship_class, $nave->starship_class);
+        array_push($array_manufacturer, $nave->manufacturer);
+        array_push($array_length, $nave->length);
+        array_push($array_passengers, $nave->passengers);
+        array_push($array_max_atmosphering_speed, $nave->max_atmosphering_speed);
+    }
+
+
     for($a = 0; $a != sizeof($array_name); $a++){
         if($search == $array_name[$a]){
             echo "

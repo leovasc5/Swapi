@@ -26,10 +26,10 @@
     $resultado = json_decode(file_get_contents($url));
 
     foreach($resultado->results as $planeta){
-        if($planeta->surface_water != "unknow"){
+        if($planeta->surface_water != "unknown"){
             $water = 100 - (int)$planeta->surface_water;
         }else{
-            $water = "unknow";
+            $water = "unknown";
         }
         echo "
         <tr>
