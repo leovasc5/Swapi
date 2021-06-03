@@ -92,6 +92,8 @@
         array_push($array_surface_water, $planeta->surface_water);
     }
 
+    $verificado = false;
+
     for($a = 0; $a != sizeof($array_name); $a++){
         if($search == $array_name[$a]){
             if($array_surface_water[$a] != "unknown"){
@@ -99,8 +101,10 @@
             }else{
                 $water = "unknown";
             }
+
+            $verificado = true;
+
             echo "
-            
                 <tr>
                     <th>Nome</th>
                     <td>$array_name[$a]</td>
@@ -133,16 +137,20 @@
             ";
         }
     }
+    if(!$verificado){
+        echo "<center><br><br><br><h2>Infelizmente não encontramos o planeta procurado :/<h2><h4>Procure novamente!</h4></center><br><br>";
+    }
 ?>
 </table>
 <center>
+<br><br><br><br><br>
     <a href="../index.php" class="link">
         <i class="fa fa-arrow-left"></i>
         <br><br>Voltar à página inicial!
     </a>
 </center>
 
-<div class="footer-basic" style="margin-top: 255px">
+<div class="footer-basic" style="margin-top: 120px">
     <footer>
         <div class="social">
             <a href="https://github.com/leovasc5/"><i class="icon ion-social-github"></i></a>

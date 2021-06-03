@@ -39,8 +39,11 @@
         array_push($array_release_date, $filme->release_date);
     }
 
+    $verificado = false;
+
     for($a = 0; $a != sizeof($array_title); $a++){
         if($search == $array_title[$a]){
+            $verificado = true;
             $temp_var = $array_release_date[$a];
             $array_time = explode('-',$temp_var);
                     $data = $array_time[2].' de ';
@@ -114,16 +117,21 @@
             ";
         }
     }
+    
+    if(!$verificado){
+        echo "<center><br><br><br><h2>Infelizmente não encontramos o filme procurado :/<h2><h4>Procure novamente!</h4></center><br><br>";
+    }
 ?>
 </table>
 <center>
+<br><br><br>
     <a href="../index.php" class="link">
         <i class="fa fa-arrow-left"></i>
         <br><br>Voltar à página inicial!
     </a>
 </center>
 
-<div class="footer-basic" style="margin-top: 295px">
+<div class="footer-basic" style="margin-top: 100px">
     <footer>
         <div class="social">
             <a href="https://github.com/leovasc5/"><i class="icon ion-social-github"></i></a>

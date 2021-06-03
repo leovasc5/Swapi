@@ -125,9 +125,11 @@
         array_push($array_gender, $personagem->gender);
     }
 
+    $verificado = false;
 
     for($a = 0; $a != sizeof($array_name); $a++){
         if($search == $array_name[$a]){
+            $verificado = true;
             echo "
             
                 <tr>
@@ -157,16 +159,20 @@
             ";
         }
     }
+    if(!$verificado){
+        echo "<center><br><br><br><h2>Infelizmente não encontramos o personagem procurado :/<h2><h4>Procure novamente!</h4></center><br><br>";
+    }
 ?>
 </table>
 <center>
+<br><br><br><br><br>
     <a href="../index.php" class="link">
         <i class="fa fa-arrow-left"></i>
         <br><br>Voltar à página inicial!
     </a>
 </center>
 
-<div class="footer-basic" style="margin-top: 255px">
+<div class="footer-basic" style="margin-top: 140px">
     <footer>
         <div class="social">
             <a href="https://github.com/leovasc5/"><i class="icon ion-social-github"></i></a>

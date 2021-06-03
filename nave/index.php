@@ -80,11 +80,12 @@
         array_push($array_max_atmosphering_speed, $nave->max_atmosphering_speed);
     }
 
+    $verificado = false;
 
     for($a = 0; $a != sizeof($array_name); $a++){
         if($search == $array_name[$a]){
+            $verificado = true;
             echo "
-            
                 <tr>
                     <th>Nome</th>
                     <td>$array_name[$a]</td>
@@ -122,16 +123,21 @@
             ";
         }
     }
+    
+    if(!$verificado){
+        echo "<center><br><br><br><h2>Infelizmente não encontramos a nave procurada :/<h2><h4>Procure novamente!</h4></center><br><br>";
+    }
 ?>
 </table>
 <center>
+<br><br><br><br><br>
     <a href="../index.php" class="link">
         <i class="fa fa-arrow-left"></i>
         <br><br>Voltar à página inicial!
     </a>
 </center>
 
-<div class="footer-basic" style="margin-top: 200px">
+<div class="footer-basic" style="margin-top: 60px">
     <footer>
         <div class="social">
             <a href="https://github.com/leovasc5/"><i class="icon ion-social-github"></i></a>

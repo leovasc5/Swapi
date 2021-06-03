@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../css/reset.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
     <link rel="stylesheet" href="../css/table.css">
     <link rel="shortcut icon" href="https://swapi.dev/static/favicon.ico">
@@ -35,8 +34,11 @@
         array_push($array_language, $especie->language);
     }
 
+    $verificado = false;
+
     for($a = 0; $a != sizeof($array_name); $a++){
         if($search == $array_name[$a]){
+            $verificado = true;
             echo "
                 <tr>
                     <th>Nome</th>
@@ -58,20 +60,22 @@
                     <td>$array_language[$a]</td>
                 </tr>
             ";
-            
         }
-       
+    }
+    if(!$verificado){
+        echo "<center><br><br><br><h2>Infelizmente não encontramos a espécie procurada :/<h2><h4>Procure novamente!</h4></center><br><br>";
     }
 ?>
 </table>
 <center>
+<br><br><br><br><br>
     <a href="../index.php" class="link">
         <i class="fa fa-arrow-left"></i>
         <br><br>Voltar à página inicial!
     </a>
 </center>
 
-<div class="footer-basic" style="margin-top: 295px">
+<div class="footer-basic" style="margin-top: 140px">
     <footer>
         <div class="social">
             <a href="https://github.com/leovasc5/"><i class="icon ion-social-github"></i></a>
