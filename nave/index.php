@@ -9,6 +9,11 @@
     <link rel="stylesheet" href="../css/table.css">
     <link rel="shortcut icon" href="https://swapi.dev/static/favicon.ico">
     <link href="../css/footer.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Odibee+Sans&display=swap" rel="stylesheet">
+    <link href="../css/font.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="https://swapi.dev/static/favicon.ico">
     <title>SWAPI - Naves</title>
 </head>
 <body>
@@ -119,7 +124,12 @@
     }
 ?>
 </table>
-<a href="../index.php">Voltar à página inicial</a>
+<center>
+    <a href="../index.php" class="link">
+        <i class="fa fa-arrow-left"></i>
+        <br><br>Voltar à página inicial!
+    </a>
+</center>
 
 <div class="footer-basic" style="margin-top: 200px">
     <footer>

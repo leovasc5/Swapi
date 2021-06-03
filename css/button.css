@@ -21,7 +21,7 @@ a{
 .botao {
     margin: 0;
     width: 150px;
-    background-color: #4CAF50;
+    background-color: #000000;
     color: white;
     padding: 10px 10px 10px 10px;
     margin: 8px 0;
@@ -30,63 +30,30 @@ a{
     cursor: pointer;
 }
 
-.pesquisar{
-    border: 1px solid #00006f;
+.botao:hover{
+    background-color: #00006f;
 }
 
 .pesquisar:hover{
-    background-color: #808080;
+    background-color: #00006f;
     color: white;
+    padding: 5px;
 }
 
 #especies{
-    background-color: #6A5ACD;
     width: 160px;
 }
 
-#especies:hover{
-    background-color: #836FFF;
-}
-
-#filmes{
-    background-color: #6959CD;
-}
-
-#filmes:hover{
-    background-color: #483D8B;
-}
-
-#naves{
-    background-color: #191970;
-}
-
-#naves:hover{
-    background-color: #0000f0;
-}
-
 #personagens{
-    background-color: #00008B;
-    width: 180px;
-}
-
-#personagens:hover{
-    background-color: #0000CD;
+    width: 190px;
 }
 
 #planetas{
-    background-color: #0000FF;
-}
-
-#planetas:hover{
-    background-color: #6495ED;
+    width: 170px;
 }
 
 #veiculos{
-    background-color: #4169E1;
-}
-
-#veiculos:hover{
-    background-color: #1E90FF;
+    width: 170px;
 }
 
 form{
